@@ -1,0 +1,496 @@
+@font-face{
+    font-family:'Cubano-Regular';
+    src: local('Cubano-Regular.otf'), url('../fonts/Cubano-Regular.otf') format('opentype');
+}
+
+[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;"]
+{
+    display: none;
+}
+
+/*BootStrap Overwrite*/
+.container{
+    padding: 0;
+    overflow-x: hidden;
+}
+@media (min-width: 544px) {
+  .container {
+    max-width: none;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: none;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: none;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: none;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .hidden-sm-upp{
+    display: none !important; 
+  }
+    .navbar-toggleable-xss{
+    display: block !important;
+    }
+    
+}
+@media only screen and (max-width: 770px){
+     .collapse{
+        text-align: right !important;
+        padding-right: 30%  !important;
+    }
+}
+@media only screen and (max-width: 438px){
+    #resume-img{
+        height: auto;
+    }
+}
+@media only screen and (min-width: 439px){
+    #resume-img{
+        height: 100%;
+    }
+}
+
+/*Header Underline*/
+h3{
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding:0px 10px 10px 10px;
+}
+ h3:after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 70px;
+    height: 1px;
+    background-color: #6fe967;
+    margin-left: -30px;
+}
+
+/*Header*/
+.head-custom{
+    background-image: url(../images/header-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+.head-bg{
+    background-color: rgba( 62, 79, 80, 0.414 );
+
+}
+
+/*Menu Bar*/
+.navbar{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.navbar-toggler{
+    float: right;
+}
+.collapse{
+    height: auto; 
+}
+.menubar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba( 106, 151, 173, 0.544 );
+    height: auto;
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+    z-index: 100;
+}
+.menubar a{
+    color: aliceblue;
+    font-weight: 800;
+}
+.menubar a:hover{
+    text-decoration: none;
+}
+.menu-bar-logo{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Cubano-Regular' ,sans-serif;
+    color: #fff;
+}
+.menu-bar-logo span{
+    color: rgba( 238, 241, 70, 0.544 );
+    font-size: 15px;
+    font-family: cursive,arial,sans-serif;
+    font-weight: 700;
+}
+
+
+/*Profile*/ 
+
+.prof{
+    height: auto;
+/*    background-color: rgba( 1, 1, 3, 0.849 );*/
+    background-color: rgba( 113, 96, 240, 0.222 );
+    overflow: hidden
+}
+.prof img{
+    width: 130px;
+    height 130px;
+    border: 3px solid rgba( 16, 238, 16, 0.966 );
+    border-radius: 50%;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.prof img:hover{
+     transform: rotate(360deg) scale(1.1);
+     -o-transform: rotate(360deg) scale(1.1);
+     -moz-transform: rotate(360deg) scale(1.1);
+     -webkit-transform: rotate(360deg) scale(1.1);
+}
+
+.prof>.prof-pic{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.prof>.name{
+    text-align: center;
+    font-family: 'Cubano-Regular',sans-serif;
+/*    color: rgba( 23, 125, 241, 0.948 );*/
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #d0e92f;
+}
+.dif-col{
+    color: #1aa6d5;
+}
+
+/*social icon*/
+.font-custom{
+    padding: 20px 20px 60px 20px;
+    text-align: center;
+}
+.font-custom>a>i{
+    color: #fff;
+    font-size: 50px;
+    padding: 10px 15px;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.font-custom>a>i:hover{
+    color: #d0e92f;
+    transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+
+/*About me*/
+.about-me{
+    position: relative;
+    
+}
+.aboutme-bg{
+    background-color: #000;
+    padding: 30px;
+}
+.aboutme-cont{
+    text-align: center;
+}
+.aboutme-cont{
+    padding: 20px 20px;
+}
+.aboutme-title{
+    color:#fff;
+    padding: 20px;
+}
+.aboutme-par{
+    color:#fff;
+    padding: 20px;
+    font-size:18px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.btn-div{
+    padding: 25px;
+    
+}
+.btn-custom{
+    background-color:transparent;
+    border: 3px solid #039564; !important
+    padding-top: 20px;
+    color:#fff;
+    font-size: 25px;
+    transition: all 1s;
+}
+.btn-custom:hover{
+    transform: scale(1.3);
+    color: #000;
+    background-color: #09bca8;
+     border: 0px;
+}
+.about-resume{
+    text-align: center;
+    background-color: rgba( 117, 140, 163, 0.595 );
+    color: white;
+    padding: 18px;
+    width: auto;
+}
+.resume-btn-custom{
+    background-color: transparent;
+    padding: 10px 19px;
+    border: 2px solid #8072de;
+    border-radius: 10px;
+    transition: all 1s;
+    width: 200px;
+    font-size: 26px;
+}
+.resume-btn-custom:hover{
+    background-color: #8072de;
+    transform: scale(1.1);
+}
+.view-resume-div{
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Progress-Bar*/
+
+.progress {
+  height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+    
+/*    left: 32%;*/
+}
+.skill-bar-head{
+    background-color: rgba( 54, 64, 103, 0.78 );
+}
+.skill-progress{
+    background-image: url(../images/progress-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 40px;
+}
+.skill-bar{
+    background-color: rgba( 58, 58, 114, 0.389 );
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.skill-bar p{
+    padding: 15px;
+     text-align: center;
+     color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+/*Social Icon*/
+.social-custom{
+    background-color:rgba( 255, 117, 117, 0.838 );
+    padding: 10px;
+}
+.social-icon{
+    text-align: center;
+}
+.social-icon a i{
+    color: #5d5d5d;
+    font-size: 50px;
+    padding: 10px;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.social-icon a i:hover{
+    transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+.social-instagram:hover{
+   color: #C4298E; 
+}
+.social-facebook:hover{
+   color: #3B5998; 
+}
+.social-whatsapp:hover{
+   color: #00E676; 
+}
+.social-linkedin:hover{
+   color: #0073B0; 
+}
+.social-github:hover{
+   color: #0D2636; 
+}
+.social-twitter:hover{
+   color: #1DA1F2; 
+}
+
+/*Skills*/
+.projects-custom{
+   background-image: url(../images/projects-bg.jpg);  
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.projects-inner{
+    background-color: rgba( 171, 207, 103, 0.544 );
+    padding: 40px;
+}
+.projects-inner>.row{
+    background-color: rgba( 21, 24, 16, 0.544 );
+}
+.project-body{
+    text-align: center;
+}
+.project-body-light{
+    background-color: rgba( 21, 24, 16, 0.335 );
+}
+.project-body-dark{
+    background-color: rgba( 21, 24, 16, 0.435 );
+}
+.project-body>.row{
+    padding: 10px;
+}
+.project-body h2{
+    font-size: 30px;
+    font-weight: 900;
+      color: #5a4343;
+}
+.project-body h5{
+    font-size: 20px;
+    font-weight: 900;
+      color: #373A3C;
+}
+.project-description{
+    padding: 30px 0px;
+}
+.project-description p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+.project-description a{
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #21c91b;
+    padding: 10px 15px;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.project-description a:hover{
+    background-color: #21c91b;
+    border: 0px;
+   transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.project-content{
+    padding: 15px;
+}
+.project-download{
+    padding: 25px;
+}
+/*Footer*/
+.footer-custom{
+    background-color: #000;
+}
+.footer-div{
+    padding: 20px;
+    padding-bottom: 5px;
+}
+.footer-copyright{
+    text-align: center;
+    color: fff;
+    font-weight: 700;
+}
+.footer-copyright a{
+    color: #edc411;
+}
+
+
+/*resume*/
+.resume-div{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 59, 47, 47, 0.787 );
+}
+#resume-img{
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+#resume-download,
+#resume-close{
+     color: whitesmoke;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 201;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    border-color: black;
+    border-style: groove;
+    border-width: 0.4px;;
+    top: -15;
+    transition: all 1s;
+}
+#resume-download{
+    left: -10;
+}
+#resume-download i{
+    bottom: 4;
+    right: 5;
+    position: absolute;
+}
+#resume-close{
+    right: -10;
+}
+#resume-close i{
+    bottom: 4;
+    left: 9;
+    position: absolute;
+}
+#resume-download:hover,
+#resume-close:hover{
+    transform: scale(1.6);
+    background-color: rgba( 59, 47, 47, 0.899);
+}
